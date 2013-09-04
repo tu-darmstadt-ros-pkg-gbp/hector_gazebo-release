@@ -1,0 +1,12 @@
+Source: ros-hydro-hector-gazebo-worlds
+Section: misc
+Priority: extra
+Maintainer: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/hector_gazebo_worlds
+Standards-Version: 3.9.2
+
+Package: ros-hydro-hector-gazebo-worlds
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-gazebo-ros, ros-hydro-hector-gazebo-plugins
+Description: hector_gazebo_worlds provides gazebo scenarios used by Team Hector Darmstadt
