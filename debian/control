@@ -1,0 +1,12 @@
+Source: ros-hydro-gazebo-rtt-plugin
+Section: misc
+Priority: extra
+Maintainer: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Build-Depends: debhelper (>= 7.0.50~), gazebo, ros-hydro-catkin, ros-hydro-hector-gazebo-plugins
+Homepage: http://ros.org/wiki/gazebo_rtt_plugin
+Standards-Version: 3.9.2
+
+Package: ros-hydro-gazebo-rtt-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-gazebo-ros
+Description: gazebo_rtt_plugin allows to load and run Orocos Components as gazebo plugins
