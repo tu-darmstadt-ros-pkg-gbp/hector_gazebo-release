@@ -1,6 +1,6 @@
 <package>
   <name>hector_gazebo</name>
-  <version>0.3.1</version>
+  <version>0.3.2</version>
   <description>hector_gazebo provides packages related to to simulation of robots using gazebo (gazebo plugins, world files etc.)</description>
   <maintainer email="meyer@fsr.tu-darmstadt.de">Johannes Meyer</maintainer>
 
@@ -15,15 +15,14 @@
   <!-- Dependencies which this package needs to build itself. -->
   <buildtool_depend>catkin</buildtool_depend>
 
-  <!-- Dependencies needed to compile this package. -->
-
-
   <!-- Dependencies needed after this package is compiled. -->
   <!-- <run_depend>gazebo_rtt_plugin</run_depend> -->
   <run_depend>hector_gazebo_thermal_camera</run_depend>
   <run_depend>hector_gazebo_worlds</run_depend>
   <run_depend>hector_gazebo_plugins</run_depend>
 
-  <!-- Dependencies needed only for running tests. -->
+  <export>
+    <metapackage/>
+  </export>
 
 </package>
