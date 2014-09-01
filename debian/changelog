@@ -1,0 +1,34 @@
+ros-indigo-hector-gazebo-thermal-camera (0.3.4-0saucy) saucy; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 31 Aug 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.3-0saucy) saucy; urgency=high
+
+  * Fix bad bug with index access
+  * Contributors: Stefan Kohlbrecher
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 26 May 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.2-0saucy) saucy; urgency=high
+
+  * added missing dependency to roscpp
+  * hector_gazebo: deleted deprecated export sections from package.xml files
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 29 Mar 2014 23:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.1-0saucy) saucy; urgency=high
+
+  * fixed image_connect_count_ compile issues with the latest gazebo_plugins version 2.3.2
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 22 Sep 2013 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.0-0saucy) saucy; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 01 Sep 2013 22:00:00 -0000
+
+
