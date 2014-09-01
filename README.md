@@ -1,3 +1,29 @@
+## hector_gazebo (hydro) - 0.3.4-0
+
+The packages in the `hector_gazebo` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --track hydro --rosdistro hydro hector_gazebo` on `Mon, 01 Sep 2014 18:51:33 -0000`
+
+These packages were released:
+- `hector_gazebo`
+- `hector_gazebo_plugins`
+- `hector_gazebo_thermal_camera`
+- `hector_gazebo_worlds`
+- `hector_sensors_gazebo`
+
+Version of package(s) in repository `hector_gazebo`:
+- upstream repository: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
+- release repository: https://github.com/tu-darmstadt-ros-pkg-gbp/hector_gazebo-release.git
+- rosdistro version: `0.3.3-0`
+- old version: `0.3.3-0`
+- new version: `0.3.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.11`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.30`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## hector_gazebo (hydro) - 0.3.3-0
 
 The packages in the `hector_gazebo` repository were released into the `hydro` distro by running `/usr/bin/bloom-release hector_gazebo -t hydro -r hydro` on `Tue, 27 May 2014 12:45:41 -0000`
