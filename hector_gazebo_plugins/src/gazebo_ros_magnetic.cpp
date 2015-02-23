@@ -46,6 +46,9 @@ GazeboRosMagnetic::GazeboRosMagnetic()
 GazeboRosMagnetic::~GazeboRosMagnetic()
 {
   updateTimer.Disconnect(updateConnection);
+
+  dynamic_reconfigure_server_.reset();
+
   node_handle_->shutdown();
   delete node_handle_;
 }
@@ -113,8 +116,8 @@ void GazeboRosMagnetic::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
   // Note: Gazebo uses NorthWestUp coordinate system, heading and declination are compass headings
   magnetic_field_.header.frame_id = frame_id_;
   magnetic_field_world_.x = magnitude_ *  cos(inclination_) * cos(reference_heading_ - declination_);
-  magnetic_field_world_.y = magnitude_ *  sin(reference_heading_ - declination_);
-  magnetic_field_world_.z = magnitude_ * -sin(inclination_) * cos(reference_heading_ - declination_);
+  magnetic_field_world_.y = magnitude_ *  cos(inclination_) * sin(reference_heading_ - declination_);
+  magnetic_field_world_.z = magnitude_ * -sin(inclination_);
 
   sensor_model_.Load(_sdf);
 
@@ -128,6 +131,10 @@ void GazeboRosMagnetic::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
 
   node_handle_ = new ros::NodeHandle(namespace_);
   publisher_ = node_handle_->advertise<geometry_msgs::Vector3Stamped>(topic_, 1);
+
+  // setup dynamic_reconfigure server
+  dynamic_reconfigure_server_.reset(new dynamic_reconfigure::Server<SensorModelConfig>(ros::NodeHandle(*node_handle_, topic_)));
+  dynamic_reconfigure_server_->setCallback(boost::bind(&SensorModel3::dynamicReconfigureCallback, &sensor_model_, _1, _2));
 
   Reset();
 
