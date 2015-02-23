@@ -45,6 +45,8 @@
 #include <hector_gazebo_plugins/sensor_model.h>
 #include <hector_gazebo_plugins/update_timer.h>
 
+#include <dynamic_reconfigure/server.h>
+
 namespace gazebo
 {
    class GazeboRosIMU : public ModelPlugin
@@ -71,9 +73,11 @@ namespace gazebo
       /// \brief pointer to ros node
       ros::NodeHandle* node_handle_;
       ros::Publisher pub_;
+      ros::Publisher bias_pub_;
 
       /// \brief ros message
       sensor_msgs::Imu imuMsg;
+      sensor_msgs::Imu biasMsg;
 
       /// \brief store link name
       std::string link_name_;
@@ -83,11 +87,12 @@ namespace gazebo
 
       /// \brief topic name
       std::string topic_;
+      std::string bias_topic_;
 
       /// \brief Sensor models
       SensorModel3 accelModel;
       SensorModel3 rateModel;
-      SensorModel headingModel;
+      SensorModel yawModel;
 
       /// \brief A mutex to lock access to fields that are used in message callbacks
       boost::mutex lock;
@@ -98,7 +103,6 @@ namespace gazebo
       math::Vector3 accel;
       math::Vector3 rate;
       math::Vector3 gravity;
-      math::Vector3 gravity_body;
 
       /// \brief Gaussian noise generator
       double GaussianKernel(double mu,double sigma);
@@ -126,6 +130,8 @@ namespace gazebo
 
       UpdateTimer updateTimer;
       event::ConnectionPtr updateConnection;
+
+      boost::shared_ptr<dynamic_reconfigure::Server<SensorModelConfig> > dynamic_reconfigure_server_accel_, dynamic_reconfigure_server_rate_, dynamic_reconfigure_server_yaw_;
    };
 }
 

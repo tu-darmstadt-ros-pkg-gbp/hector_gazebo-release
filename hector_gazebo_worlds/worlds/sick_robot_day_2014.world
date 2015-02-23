@@ -33,13 +33,49 @@
       <direction>0.1 0.1 -1</direction>
       <cast_shadows>false</cast_shadows>
     </light> -->
-    <light type="point" name="point_light_1">
-      <pose>0 0 4 0.1 0.1 0</pose>
-      <diffuse>1 1 1 1</diffuse>
+    <light type="point" name="point_light_0">
+      <pose>3 0 1 0.1 0.1 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
       <specular>1 1 1 1</specular>
       <attenuation>
-        <range>300</range>
-        <constant>0.5</constant>
+        <range>30</range>
+        <constant>0.9</constant>
+        <linear>0.0</linear>
+      </attenuation>
+      <direction>0.1 0.1 0</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+        <light type="point" name="point_light_1">
+      <pose>0 3 1 0.1 0.1 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <attenuation>
+        <range>30</range>
+        <constant>0.9</constant>
+        <linear>0.0</linear>
+      </attenuation>
+      <direction>0.1 0.1 0</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+        <light type="point" name="point_light_2">
+      <pose>-3 0 1 0.1 0.1 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <attenuation>
+        <range>30</range>
+        <constant>0.9</constant>
+        <linear>0.0</linear>
+      </attenuation>
+      <direction>0.1 0.1 0</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+        <light type="point" name="point_light_3">
+      <pose>0 -3 1 0.1 0.1 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <attenuation>
+        <range>30</range>
+        <constant>0.9</constant>
         <linear>0.0</linear>
       </attenuation>
       <direction>0.1 0.1 0</direction>
@@ -99,7 +135,10 @@
         <collision name="sick_robot_day_2012_20m_collision">
           <geometry>
             <mesh>
+              <uri>file://sick_robot_day_2014_with_stations.dae</uri>
+              <!--Using below should be faster, as less geometry
               <uri>file://sick_robot_day_2014.dae</uri>
+              -->
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -107,7 +146,7 @@
         <visual name="sick_robot_day_2012_20m">
           <geometry>
             <mesh>
-              <uri>file://sick_robot_day_2014.dae</uri>
+              <uri>file://sick_robot_day_2014_with_stations.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -116,21 +155,21 @@
       </link>
       <static>true</static>
     </model>
-    <model name="ring_no_1">
-      <link name="ring_no_1_link">
-        <pose>5.7 0 0.5 0 0 0</pose>
-        <collision name="ring_no_1_collision">
+    <model name="sick_robot_day_2014_center">
+      <link name="sick_robot_day_2014_center">
+        <pose>0 0 0 0 0 0</pose>
+        <collision name="sick_robot_day_2014_center_collision">
           <geometry>
             <mesh>
-              <uri>file://sick_robot_day_2014_ring.stl</uri>
+              <uri>file://sick_robot_day_2014_inner_block_with_stations.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
         </collision>
-        <visual name="ring_no_1_visual">
+        <visual name="ssick_robot_day_2014_center">
           <geometry>
             <mesh>
-              <uri>file://sick_robot_day_2014_ring.dae</uri>
+              <uri>file://sick_robot_day_2014_inner_block_with_stations.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -139,28 +178,54 @@
       </link>
       <static>true</static>
     </model>
-    <model name="panel_no_1">
-      <link name="panel_no_1_link">
-        <pose>6 0 1.5 0 0 3.14</pose>
-        <collision name="panel_no_1_collision">
+    <!--    
+    <model name="target_no_0">
+      <link name="target_no_0_link">
+        <pose>6.043906 0.001611 0.0 0 0 3.043185</pose>
+        <visual name="target_no_0_visual">https://www.facebook.com/
           <geometry>
             <mesh>
-              <uri>file://sick_robot_panel.stl</uri>
-              <scale>0.5 0.5 0.5</scale>
+              <uri>file://sick_robot_day_2014_target_station_complete_0.dae</uri>
+              <scale>1 1 1</scale>
             </mesh>
-          </geometry>
-        </collision>
-        <visual name="panel_no_1_visual">
-          <geometry>
-            <mesh>
-              <uri>file://sick_robot_panel_1.dae</uri>
-              <scale>0.5 0.5 0.5</scale>
-            </mesh>
-          </geometry>
+         </geometry>
           <cast_shadows>false</cast_shadows>
         </visual>
       </link>
       <static>true</static>
     </model>
+    <model name="target_no_5">
+      <link name="target_no_5_link">
+        <pose>5.525376 2.694268 0.0 0 0 -2.689556</pose>
+        <visual name="target_no_5_visual">https://www.facebook.com/
+          <geometry>
+            <mesh>
+              <uri>file://sick_robot_day_2014_target_station_complete_5.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+         </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    -->
+    <!--
+    <model name="target_no_1">
+      <link name="target_no_1_link">
+        <pose>0 0 0.0 0 0 0</pose>
+        <visual name="target_no_1_visual">https://www.facebook.com/
+          <geometry>
+            <mesh>
+              <uri>file://sick_robot_day_2014_target_station_complete_2.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+         </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+    -->
   </world>
 </sdf>
