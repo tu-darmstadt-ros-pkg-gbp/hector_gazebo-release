@@ -1,3 +1,29 @@
+## hector_gazebo (indigo) - 0.3.6-0
+
+The packages in the `hector_gazebo` repository were released into the `indigo` distro by running `/usr/bin/bloom-release hector_gazebo --track indigo --ros-distro indigo` on `Sat, 21 Mar 2015 13:48:22 -0000`
+
+These packages were released:
+- `hector_gazebo`
+- `hector_gazebo_plugins`
+- `hector_gazebo_thermal_camera`
+- `hector_gazebo_worlds`
+- `hector_sensors_gazebo`
+
+Version of package(s) in repository `hector_gazebo`:
+- upstream repository: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
+- release repository: https://github.com/tu-darmstadt-ros-pkg-gbp/hector_gazebo-release.git
+- rosdistro version: `0.3.5-0`
+- old version: `0.3.5-0`
+- new version: `0.3.6-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.7`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.1`
+- vcstools version: `0.1.36`
+
+
 ## hector_gazebo (hydro) - 0.3.6-0
 
 The packages in the `hector_gazebo` repository were released into the `hydro` distro by running `/usr/bin/bloom-release hector_gazebo --track hydro --ros-distro hydro` on `Sat, 21 Mar 2015 13:45:06 -0000`
