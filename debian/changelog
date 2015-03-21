@@ -1,0 +1,71 @@
+ros-indigo-hector-gazebo-worlds (0.3.6-0saucy) saucy; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 20 Mar 2015 23:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.5-0saucy) saucy; urgency=high
+
+  * Change drc qual 4 settings to be same as current Atlas default
+  * Add drc final qual step block world and launch file
+  * 
+    
+      * Adjusted lighting
+    
+  * 
+    
+      * Update world
+    
+  * -Add inner block with stations model
+  * -Add complete sick robot day 2014 outer ring with stations
+  * -Add two target panel examples to world
+  * -Update world file
+  * -Add complete sick robot day 2014 target stations
+  * -Add inner block to world
+  * -Add inner block for sick robot day 2014
+  * -Add target model to sick robot day 2014 world
+  * -Add sick robot day target model
+  * Contributors: Stefan Kohlbrecher
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 22 Feb 2015 23:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.4-0saucy) saucy; urgency=high
+
+  * updated world files to SDF 1.4 using gzsdf
+  * Change light for sick robot day 2014 world, add number panel example
+  * Add sick robot number panel stl file for collision geom
+  * Add collada files for sick robot day number panels
+  * Add sick robot day number panels
+  * Add sick robot day 2014 related files
+  * Add model for sick robot day 2014 ring
+  * added args roslaunch argument to pass additional command line arguments to gzserver
+  * Contributors: Johannes Meyer, Stefan Kohlbrecher
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 31 Aug 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.3-0saucy) saucy; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 26 May 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.2-0saucy) saucy; urgency=high
+
+  * added missing install rule
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 29 Mar 2014 23:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.1-0saucy) saucy; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 22 Sep 2013 22:00:00 -0000
+
+ros-indigo-hector-gazebo-worlds (0.3.0-0saucy) saucy; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 01 Sep 2013 22:00:00 -0000
+
+
