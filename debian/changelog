@@ -1,0 +1,53 @@
+ros-indigo-hector-gazebo-thermal-camera (0.3.7-0trusty) trusty; urgency=high
+
+  * hector_gazebo_plugins/hector_gazebo_thermal_camera: switch to cmake configuration for gazebo and added OGRE include directories required for CameraPlugin.hh
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 06 Nov 2015 23:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.6-0trusty) trusty; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 20 Mar 2015 23:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.5-0trusty) trusty; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 22 Feb 2015 23:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.4-0trusty) trusty; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 31 Aug 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.3-0trusty) trusty; urgency=high
+
+  * Fix bad bug with index access
+  * Contributors: Stefan Kohlbrecher
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 26 May 2014 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.2-0trusty) trusty; urgency=high
+
+  * added missing dependency to roscpp
+  * hector_gazebo: deleted deprecated export sections from package.xml files
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 29 Mar 2014 23:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.1-0trusty) trusty; urgency=high
+
+  * fixed image_connect_count_ compile issues with the latest gazebo_plugins version 2.3.2
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 22 Sep 2013 22:00:00 -0000
+
+ros-indigo-hector-gazebo-thermal-camera (0.3.0-0trusty) trusty; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 01 Sep 2013 22:00:00 -0000
+
+
