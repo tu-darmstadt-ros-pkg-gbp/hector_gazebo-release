@@ -8,10 +8,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp std_msgs std_srvs geometry_msgs n
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 ## Find gazebo
-include(FindPkgConfig)
-if(PKG_CONFIG_FOUND)
-  pkg_check_modules(GAZEBO gazebo)
-endif()
+find_package(gazebo REQUIRED)
 include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
 
@@ -71,6 +68,9 @@ target_link_libraries(diffdrive_plugin_6w ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES}
 add_library(diffdrive_plugin_multi_wheel src/diffdrive_plugin_multi_wheel.cpp)
 target_link_libraries(diffdrive_plugin_multi_wheel ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
 
+add_library(gazebo_ros_force_based_move src/gazebo_ros_force_based_move.cpp)
+target_link_libraries(gazebo_ros_force_based_move ${Boost_LIBRARIES} ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
+
 add_library(hector_gazebo_reset_plugin src/reset_plugin.cpp)
 target_link_libraries(hector_gazebo_reset_plugin ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
 
@@ -108,7 +108,8 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 install(TARGETS
   diffdrive_plugin_6w
-diffdrive_plugin_multi_wheel
+  diffdrive_plugin_multi_wheel
+  gazebo_ros_force_based_move
   hector_gazebo_reset_plugin
   hector_gazebo_ros_imu
   hector_gazebo_ros_magnetic
