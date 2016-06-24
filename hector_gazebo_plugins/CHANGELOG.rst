@@ -2,10 +2,53 @@
 Changelog for package hector_gazebo_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.1 (2016-06-24)
+------------------
+* Merge branch 'indigo-devel' into jade-devel
+  Conflicts:
+  hector_gazebo/CHANGELOG.rst
+  hector_gazebo/package.xml
+  hector_gazebo_plugins/CHANGELOG.rst
+  hector_gazebo_plugins/package.xml
+  hector_gazebo_thermal_camera/CHANGELOG.rst
+  hector_gazebo_thermal_camera/package.xml
+  hector_gazebo_worlds/CHANGELOG.rst
+  hector_gazebo_worlds/package.xml
+  hector_sensors_gazebo/CHANGELOG.rst
+  hector_sensors_gazebo/package.xml
+* Merge branch 'jade-devel' of https://github.com/nicolaerosia/hector_gazebo into nicolaerosia-jade-devel
+  Conflicts:
+  hector_gazebo_plugins/src/diffdrive_plugin_6w.cpp
+  hector_gazebo_plugins/src/diffdrive_plugin_multi_wheel.cpp
+  hector_gazebo_plugins/src/gazebo_ros_sonar.cpp
+  hector_gazebo_plugins/src/servo_plugin.cpp
+* Merge branch 'indigo-devel' into jade-devel
+* Fix compilation errors and warnings against Gazebo 7
+  Signed-off-by: Nicolae Rosia <nicolae.rosia@gmail.com>
+* Add Cmake flags for C++11
+* 0.4.0
+* Added proper dependencies for jade and gazebo5. Now compiles and works for gazebo5
+* Contributors: Johannes Meyer, L0g1x, Nicolae Rosia, Romain Reignier
+
 0.4.0 (2015-11-07)
 ------------------
 * Added proper dependencies for jade and gazebo5. Now compiles and works for gazebo5
 * Contributors: L0g1x
+
+0.3.8 (2016-06-24)
+------------------
+* hector_gazebo_plugins: fixed angular rate output with non-zero rpyOffset parameter (fix #23)
+* Fix compilation errors and warnings against Gazebo 7
+* Fix
+* Compatible with gazebo7
+* [hector_gazebo_plugins] fix missing dependencies
+* Update odometry with proper covariance data
+* Updates to 2d odom
+* Basics of 2d odom
+* Add gitignore
+* Add Cmake flags for C++11
+* Make force based p gains parameters
+* Contributors: Furushchev, Johannes Meyer, Nate Koenig, Nicolae Rosia, Romain Reignier, Stefan Kohlbrecher
 
 0.3.7 (2015-11-07)
 ------------------
