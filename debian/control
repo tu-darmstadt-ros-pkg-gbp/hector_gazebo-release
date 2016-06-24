@@ -1,0 +1,13 @@
+Source: ros-kinetic-hector-gazebo-thermal-camera
+Section: misc
+Priority: extra
+Maintainer: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), libgazebo7-dev, ros-kinetic-catkin, ros-kinetic-gazebo-plugins, ros-kinetic-roscpp
+Homepage: http://ros.org/wiki/hector_gazebo_thermal_camera
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-hector-gazebo-thermal-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, gazebo7, ros-kinetic-gazebo-plugins, ros-kinetic-roscpp
+Description: hector_gazebo_thermal_camera provides a gazebo plugin that produces simulated thermal camera images.
+ The plugin uses modified code from the gazebo_ros_camera plugin.
