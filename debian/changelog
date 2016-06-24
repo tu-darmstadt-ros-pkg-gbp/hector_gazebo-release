@@ -1,0 +1,82 @@
+ros-kinetic-hector-gazebo-thermal-camera (0.5.0-0wily) wily; urgency=high
+
+  * Updated gazebo dependencies to version 7 for kinetic release
+  * hector_gazebo_thermal_camera: get rid of unused dependencies nodelet, dynamic_reconfigure, driver_base and image_transport
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.4.1-0wily) wily; urgency=high
+
+  * see 0.3.8
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.4.0-0wily) wily; urgency=high
+
+  * Added proper dependencies for jade and gazebo5. Now compiles and works for gazebo5
+  * Contributors: L0g1x
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.8-0wily) wily; urgency=high
+
+  * Compatible with gazebo7
+  * Add Cmake flags for C++11
+  * Contributors: Nate Koenig, Romain Reignier
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.7-0wily) wily; urgency=high
+
+  * hector_gazebo_plugins/hector_gazebo_thermal_camera: switch to cmake configuration for gazebo and added OGRE include directories required for CameraPlugin.hh
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.6-0wily) wily; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sat, 21 Mar 2015 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.5-0wily) wily; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 23 Feb 2015 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.4-0wily) wily; urgency=high
+
+
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 01 Sep 2014 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.3-0wily) wily; urgency=high
+
+  * Fix bad bug with index access
+  * Contributors: Stefan Kohlbrecher
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Tue, 27 May 2014 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.2-0wily) wily; urgency=high
+
+  * added missing dependency to roscpp
+  * hector_gazebo: deleted deprecated export sections from package.xml files
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Sun, 30 Mar 2014 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.1-0wily) wily; urgency=high
+
+  * fixed image_connect_count_ compile issues with the latest gazebo_plugins version 2.3.2
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 23 Sep 2013 00:00:00 -0000
+
+ros-kinetic-hector-gazebo-thermal-camera (0.3.0-0wily) wily; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Johannes Meyer <meyer@fsr.tu-darmstadt.de>  Mon, 02 Sep 2013 00:00:00 -0000
+
+
