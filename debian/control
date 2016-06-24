@@ -1,0 +1,12 @@
+Source: ros-kinetic-hector-gazebo
+Section: misc
+Priority: extra
+Maintainer: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/hector_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-hector-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-hector-gazebo-plugins, ros-kinetic-hector-gazebo-thermal-camera, ros-kinetic-hector-gazebo-worlds
+Description: hector_gazebo provides packages related to to simulation of robots using gazebo (gazebo plugins, world files etc.)
