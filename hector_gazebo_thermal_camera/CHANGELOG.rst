@@ -2,10 +2,11 @@
 Changelog for package hector_gazebo_thermal_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.0 (2015-11-07)
+0.3.8 (2016-06-24)
 ------------------
-* Added proper dependencies for jade and gazebo5. Now compiles and works for gazebo5
-* Contributors: L0g1x
+* Compatible with gazebo7
+* Add Cmake flags for C++11
+* Contributors: Nate Koenig, Romain Reignier
 
 0.3.7 (2015-11-07)
 ------------------
