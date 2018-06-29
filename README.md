@@ -1,3 +1,31 @@
+## hector_gazebo (melodic) - 0.5.1-0
+
+The packages in the `hector_gazebo` repository were released into the `melodic` distro by running `/usr/bin/bloom-release hector_gazebo --rosdistro melodic --track melodic` on `Fri, 29 Jun 2018 19:33:02 -0000`
+
+These packages were released:
+- `hector_gazebo`
+- `hector_gazebo_plugins`
+- `hector_gazebo_thermal_camera`
+- `hector_gazebo_worlds`
+- `hector_sensors_gazebo`
+
+Version of package(s) in repository `hector_gazebo`:
+
+- upstream repository: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.5.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.3`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## hector_gazebo (lunar) - 0.5.1-0
 
 The packages in the `hector_gazebo` repository were released into the `lunar` distro by running `/usr/bin/bloom-release hector_gazebo --rosdistro lunar --track lunar` on `Fri, 29 Jun 2018 18:28:35 -0000`
