@@ -1,0 +1,12 @@
+Source: ros-lunar-hector-sensors-gazebo
+Section: misc
+Priority: extra
+Maintainer: Johannes Meyer <johannes@intermodalics.eu>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/hector_sensors_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-lunar-hector-sensors-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-gazebo-plugins, ros-lunar-hector-gazebo-plugins, ros-lunar-hector-sensors-description
+Description: hector_sensors_gazebo depends on the necessary plugins for using the sensors from the hector_models repository.
