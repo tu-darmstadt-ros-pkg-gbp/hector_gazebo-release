@@ -1,0 +1,112 @@
+ros-noetic-hector-gazebo-thermal-camera (0.5.3-1focal) focal; urgency=high
+
+  * Updated CMake version and fixed CMP0048 for non-metapackages.
+  * Updated package format and maintainer information.
+  * Contributors: Stefan Fabian
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Wed, 03 Feb 2021 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.5.2-1focal) focal; urgency=high
+
+  * Merge pull request #64 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/64> from ms-iot/upstream_windows_fix
+    [Windows][melodic-devel] Follow catkin guide to update the install path
+  * fix install path. (#1 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/1>)
+  * Merge pull request #53 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/53> from enwaytech/ml/cmp0054_fix
+    add CMP0045 cmake policy before gazebo include in CMakeLists.txt
+  * add CMP0045 cmake policy before gazebo include in CMakeLists.txt
+  * Contributors: Johannes Meyer, Matthias Loebach, Sean Yen
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Thu, 17 Dec 2020 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.5.1-1focal) focal; urgency=high
+
+  * Merge pull request #44 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/44> from esteve/gazebo8
+    Use Gazebo 8 APIs to avoid deprecation warnings.
+  * hector_gazebo_plugins/hector_gazebo_thermal_camera: removed catkin_package(DEPENDS gazebo) declaration which was a no-op anyway
+    See https://github.com/ros-simulation/gazebo_ros_pkgs/pull/537.
+  * Contributors: Esteve Fernandez, Johannes Meyer
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Fri, 29 Jun 2018 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.5.0-1focal) focal; urgency=high
+
+  * Updated gazebo dependencies to version 7 for kinetic release
+  * hector_gazebo_thermal_camera: get rid of unused dependencies nodelet, dynamic_reconfigure, driver_base and image_transport
+  * Contributors: Johannes Meyer
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.4.1-1focal) focal; urgency=high
+
+  * see 0.3.8
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.4.0-1focal) focal; urgency=high
+
+  * Added proper dependencies for jade and gazebo5. Now compiles and works for gazebo5
+  * Contributors: L0g1x
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.8-1focal) focal; urgency=high
+
+  * Compatible with gazebo7
+  * Add Cmake flags for C++11
+  * Contributors: Nate Koenig, Romain Reignier
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.7-1focal) focal; urgency=high
+
+  * hector_gazebo_plugins/hector_gazebo_thermal_camera: switch to cmake configuration for gazebo and added OGRE include directories required for CameraPlugin.hh
+  * Contributors: Johannes Meyer
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.6-1focal) focal; urgency=high
+
+
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Sat, 21 Mar 2015 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.5-1focal) focal; urgency=high
+
+
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Mon, 23 Feb 2015 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.4-1focal) focal; urgency=high
+
+
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Mon, 01 Sep 2014 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.3-1focal) focal; urgency=high
+
+  * Fix bad bug with index access
+  * Contributors: Stefan Kohlbrecher
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Tue, 27 May 2014 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.2-1focal) focal; urgency=high
+
+  * added missing dependency to roscpp
+  * hector_gazebo: deleted deprecated export sections from package.xml files
+  * Contributors: Johannes Meyer
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Sun, 30 Mar 2014 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.1-1focal) focal; urgency=high
+
+  * fixed image_connect_count_ compile issues with the latest gazebo_plugins version 2.3.2
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Mon, 23 Sep 2013 00:00:00 -0000
+
+ros-noetic-hector-gazebo-thermal-camera (0.3.0-1focal) focal; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Mon, 02 Sep 2013 00:00:00 -0000
+
+
