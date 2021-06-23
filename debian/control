@@ -1,0 +1,13 @@
+Source: ros-melodic-hector-gazebo-thermal-camera
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <fabian@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-gazebo-plugins, ros-melodic-roscpp
+Homepage: http://ros.org/wiki/hector_gazebo_thermal_camera
+Standards-Version: 3.9.2
+
+Package: ros-melodic-hector-gazebo-thermal-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, gazebo9, ros-melodic-gazebo-plugins, ros-melodic-roscpp
+Description: hector_gazebo_thermal_camera provides a gazebo plugin that produces simulated thermal camera images.
+ The plugin uses modified code from the gazebo_ros_camera plugin.
