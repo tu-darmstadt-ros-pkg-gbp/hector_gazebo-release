@@ -1,0 +1,12 @@
+Source: ros-melodic-hector-gazebo-worlds
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <fabian@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/hector_gazebo_worlds
+Standards-Version: 3.9.2
+
+Package: ros-melodic-hector-gazebo-worlds
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-gazebo-ros, ros-melodic-hector-gazebo-plugins
+Description: hector_gazebo_worlds provides gazebo scenarios used by Team Hector Darmstadt
