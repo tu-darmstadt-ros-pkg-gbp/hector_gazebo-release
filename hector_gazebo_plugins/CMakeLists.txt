@@ -1,13 +1,16 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(hector_gazebo_plugins)
+cmake_minimum_required(VERSION 3.5)
+project(hector_gazebo_plugins VERSION 0.5.3)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS roscpp std_msgs std_srvs geometry_msgs nav_msgs tf dynamic_reconfigure message_generation)
+find_package(catkin REQUIRED COMPONENTS roscpp std_msgs std_srvs geographic_msgs geometry_msgs nav_msgs tf dynamic_reconfigure message_generation)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 ## Find gazebo
+if(POLICY CMP0054)
+  cmake_policy(SET CMP0054 NEW)
+endif()
 find_package(gazebo REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 include_directories(${GAZEBO_INCLUDE_DIRS})
@@ -27,14 +30,15 @@ include_directories(${Boost_INCLUDE_DIRS})
 # )
 
 ## Generate services in the 'srv' folder
-add_service_files(
+add_service_files(DIRECTORY srv
   FILES
-  SetBias.srv
+    SetBias.srv
+    SetReferenceGeoPose.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
-  DEPENDENCIES geometry_msgs
+  DEPENDENCIES geographic_msgs geometry_msgs
 )
 
 #add dynamic reconfigure api
@@ -53,7 +57,7 @@ generate_dynamic_reconfigure_options(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-    CATKIN_DEPENDS roscpp std_msgs geometry_msgs nav_msgs tf message_runtime
+    CATKIN_DEPENDS roscpp std_msgs geographic_msgs geometry_msgs nav_msgs tf message_runtime
     INCLUDE_DIRS include
     LIBRARIES
 )
@@ -84,7 +88,7 @@ add_dependencies(hector_gazebo_ros_magnetic ${PROJECT_NAME}_gencfg)
 
 add_library(hector_gazebo_ros_gps src/gazebo_ros_gps.cpp)
 target_link_libraries(hector_gazebo_ros_gps ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
-add_dependencies(hector_gazebo_ros_gps ${PROJECT_NAME}_gencfg)
+add_dependencies(hector_gazebo_ros_gps ${PROJECT_NAME}_generate_messages_cpp ${PROJECT_NAME}_gencfg)
 
 add_library(hector_gazebo_ros_sonar src/gazebo_ros_sonar.cpp)
 target_link_libraries(hector_gazebo_ros_sonar ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
@@ -118,5 +122,5 @@ install(TARGETS
   hector_servo_plugin
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 )
