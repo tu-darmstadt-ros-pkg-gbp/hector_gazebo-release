@@ -2,6 +2,18 @@
 Changelog for package hector_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.4 (2021-06-23)
+------------------
+
+0.5.3 (2021-02-03)
+------------------
+* Updated CMake version and fixed CMP0048 for non-metapackages.
+* Updated package format and maintainer information.
+* Contributors: Stefan Fabian
+
+0.5.2 (2020-12-17)
+------------------
+
 0.5.1 (2018-06-29)
 ------------------
 
