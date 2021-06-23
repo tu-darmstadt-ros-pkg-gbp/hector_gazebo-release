@@ -2,6 +2,63 @@
 Changelog for package hector_gazebo_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.4 (2021-06-23)
+------------------
+* Added missing generate_message_cpp dependancy
+* Add service to gazebo gps sensor to set reference geopose
+* Add parameter to enable fetching the spherical coordinates from the world. (`#83 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/83>`_)
+  * Use worlds spherical_coordinates for GPS/magnetic reference
+  This modifies GPS and magnetic plugins to use the values from the spherical_coordinates element of the world SDF as default values for the latitude, longitude, altitude and heading references.
+  The optional parameters can still overwrite this values. However it is important to notice, that the heading in the world SDF is specified counter-clockwise from east whereas the reference_heading
+  parameter is specified is specified clockwise from north.
+  * Update spherical coordinates calls.
+  * Add parameter to enable fetching the spherical coordinates from the world.
+  This extends `#47 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/47>`_ with the addition of a "useWorldSphericalCoordinates" parameter
+  that must be present and set to true to allow using the world's coordinates.
+  This should solve `#15 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/15>`_ while addressing the concerns in `#47 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/47>`_.
+  Co-authored-by: Jacob Seibert <jacob.seibert@enway.ai>
+* Contributors: Ferry Schoenmakers, Roland Arsenault, h-wata
+
+0.5.3 (2021-02-03)
+------------------
+* Updated CMake version and fixed CMP0048 for non-metapackages.
+* Merge branch 'kinetic-devel' into melodic-devel
+* Adjust licenses to be consistent with cpp files and plugins used in gazebo_ros_pkgs
+* Updated package format and maintainer information.
+* Contributors: Stefan Fabian, Stefan Kohlbrecher
+
+0.5.2 (2020-12-17)
+------------------
+* Add case for rotating in place in odometry (`#75 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/75>`_)
+  * Add case for rotating in place in odometry
+  Odometry calculations were not taking in account the case of the robot rotating in place. This
+  would cause a division by zero and make the plugin return invalid data. This commit handles this
+  case by not using the arc method if the distance traveled by the robot is close to zero.
+  * Fix negative Y-axis motion bug
+  Only the displacement along X and the combined displacement were used to
+  calculate the angle between the X-axis and the robot drive direction.
+  This resulted in a positive angle whatever if the displacement along Y
+  was positive or negative. This commit addresses the issue by using both
+  displacements along X and Y to calculate the angle.
+* Allow publishing sensor_msgs/MagneticField (`#73 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/73>`_)
+  Add a new useMagneticFieldMsgs parameter to the magnetometer plugin, allowing the node to publish sensor_msgs/MagneticField messages instead of std_msgs/Vector3Stamped
+* Add support of holonomic robot by adding missing Y component in odometry (`#71 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/71>`_)
+  * Add support of holonomic robot by adding missing Y component in odometry
+  The odometry was only computed taking in account linear velocity on the x-axis and angular
+  velocity around the z-axis. The code is modified to include linear velocity on the y-axis for
+  support of holonomic robots. Odometry arc and radius are calculated the same way as before but
+  using the combined linear velocity instead. The end position is then rotated by the angle between
+  the combined velocity vector and the x-axis
+  * Change variable name
+  * Rename combined velocity angle variable
+* Merge pull request `#64 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/64>`_ from ms-iot/upstream_windows_fix
+  [Windows][melodic-devel] Follow catkin guide to update the install path
+* fix install path. (`#1 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/1>`_)
+* Merge pull request `#53 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/53>`_ from enwaytech/ml/cmp0054_fix
+  add CMP0045 cmake policy before gazebo include in CMakeLists.txt
+* add CMP0045 cmake policy before gazebo include in CMakeLists.txt
+* Contributors: Chris I-B, Johannes Meyer, Matthias Loebach, RobinB, Sean Yen, Stefan Fabian
+
 0.5.1 (2018-06-29)
 ------------------
 * Merge pull request `#44 <https://github.com/tu-darmstadt-ros-pkg/hector_gazebo/issues/44>`_ from esteve/gazebo8
