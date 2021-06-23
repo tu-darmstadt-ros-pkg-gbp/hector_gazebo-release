@@ -1,0 +1,12 @@
+Source: ros-noetic-hector-sensors-gazebo
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <fabian@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/hector_sensors_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-noetic-hector-sensors-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-gazebo-plugins, ros-noetic-hector-gazebo-plugins, ros-noetic-hector-sensors-description
+Description: hector_sensors_gazebo depends on the necessary plugins for using the sensors from the hector_models repository.
