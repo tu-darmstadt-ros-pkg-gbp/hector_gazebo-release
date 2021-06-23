@@ -2,6 +2,9 @@
 Changelog for package hector_sensors_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.4 (2021-06-23)
+------------------
+
 0.5.3 (2021-02-03)
 ------------------
 * Updated CMake version and fixed CMP0048 for non-metapackages.
