@@ -1,0 +1,12 @@
+Source: ros-melodic-hector-gazebo
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <fabian@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/hector_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-melodic-hector-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-hector-gazebo-plugins, ros-melodic-hector-gazebo-thermal-camera, ros-melodic-hector-gazebo-worlds
+Description: hector_gazebo provides packages related to to simulation of robots using gazebo (gazebo plugins, world files etc.)

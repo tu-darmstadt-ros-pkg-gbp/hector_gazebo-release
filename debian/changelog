@@ -1,0 +1,102 @@
+ros-melodic-hector-gazebo (0.5.4-1bionic) bionic; urgency=high
+
+
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Wed, 23 Jun 2021 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.5.3-1bionic) bionic; urgency=high
+
+  * Updated CMake version and fixed CMP0048 for non-metapackages.
+  * Updated package format and maintainer information.
+  * Contributors: Stefan Fabian
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Wed, 03 Feb 2021 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.5.2-1bionic) bionic; urgency=high
+
+
+
+ -- Stefan Fabian <fabian@sim.tu-darmstadt.de>  Thu, 17 Dec 2020 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.5.1-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Fri, 29 Jun 2018 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.5.0-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.4.1-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.4.0-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.8-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Fri, 24 Jun 2016 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.7-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Sat, 07 Nov 2015 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.6-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Sat, 21 Mar 2015 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.5-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Mon, 23 Feb 2015 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.4-1bionic) bionic; urgency=high
+
+  * Removed package gazebo_rtt_plugin
+    This package is obsolete. Use the rtt_gazebo stack instead.
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Mon, 01 Sep 2014 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.3-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Tue, 27 May 2014 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.2-1bionic) bionic; urgency=high
+
+  * Made hector_gazebo and hector_sensors_gazebo true metapackages
+  * Contributors: Johannes Meyer
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Sun, 30 Mar 2014 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.1-1bionic) bionic; urgency=high
+
+
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Mon, 23 Sep 2013 00:00:00 -0000
+
+ros-melodic-hector-gazebo (0.3.0-1bionic) bionic; urgency=high
+
+  * Catkinization of stack hector_gazebo
+
+ -- Johannes Meyer <johannes@intermodalics.eu>  Mon, 02 Sep 2013 00:00:00 -0000
+
+
